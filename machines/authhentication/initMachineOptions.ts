@@ -2,10 +2,12 @@ import {assign} from 'xstate';
 import {signIn} from './authService';
 import isEmail from 'validator/lib/isEmail';
 
+type FocusFunc = () => void;
+
 const initMachineOptions = (
-  handleEmailInputFocus: any,
-  handlePasswordInputFocus: any,
-  handleSubmitButtonFocus: any
+  handleEmailInputFocus: FocusFunc,
+  handlePasswordInputFocus: FocusFunc,
+  handleSubmitButtonFocus: FocusFunc
 ) => ({
   guards: {
     isNoEmail: (context: any) => context.email.length === 0,

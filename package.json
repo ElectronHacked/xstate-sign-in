@@ -7,8 +7,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "@atlaskit/button": "^13.3.7",
+    "@atlaskit/css-reset": "^5.0.10",
+    "@atlaskit/form": "^7.1.3",
+    "@atlaskit/textfield": "^3.1.7",
     "@types/validator": "^12.0.1",
     "@xstate/react": "^0.8.1",
+    "lodash": "^4.17.15",
     "next": "^9.2.2",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
@@ -17,6 +22,7 @@
     "xstate": "^4.7.8"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.149",
     "@types/node": "12.0.12",
     "@types/react": "16.8.23",
     "@types/react-dom": "16.8.4",
